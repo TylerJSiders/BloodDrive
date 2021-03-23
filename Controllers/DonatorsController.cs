@@ -65,6 +65,11 @@ namespace BloodDriveDonation.Controllers
             return View(donator);
         }
 
+        public async Task<IActionResult> ElligibleDonators()
+        {
+            return View(await _context.Donators.ToListAsync());
+        }
+
         // GET: Donators/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {

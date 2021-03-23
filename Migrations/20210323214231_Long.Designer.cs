@@ -4,14 +4,16 @@ using BloodDriveDonation.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BloodDriveDonation.Migrations
 {
     [DbContext(typeof(BloodDriveContext))]
-    partial class BloodDriveContextModelSnapshot : ModelSnapshot
+    [Migration("20210323214231_Long")]
+    partial class Long
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
