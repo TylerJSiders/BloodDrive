@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BloodDriveDonation.Data;
 using BloodDriveDonation.Models;
+using BloodDriveDonation.Models.ViewModels;
 
 namespace BloodDriveDonation.Controllers
 {
@@ -22,6 +23,10 @@ namespace BloodDriveDonation.Controllers
         // GET: Donators
         public async Task<IActionResult> Index()
         {
+
+            
+
+
             return View(await _context.Donators.ToListAsync());
         }
 

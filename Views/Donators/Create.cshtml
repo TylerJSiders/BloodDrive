@@ -30,7 +30,17 @@
             <div class="form-group">
                 <label asp-for="BloodType" class="control-label"></label>
                 <div></div>
-                <select></select>
+                <select>
+                    @*Might have to change the value to integers*@
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
                 <span asp-validation-for="BloodType" class="text-danger"></span>
             </div>
             <div class="form-group">
